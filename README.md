@@ -19,18 +19,23 @@ python3 -m pip install pyserial xmodem
 ```
 
 ## Directories
-bootloader: This directory contain the bootloader for Raspberry Pi Zero W. Copy entire content to an SD Card and insert it into RPI 0.
+### bootloader: 
+This directory contain the bootloader for Raspberry Pi Zero W. Copy entire content to an SD Card and insert it into RPI 0.
 
 
-app: This directory contain a minimal file strucutre of a C application that can be cross compiled for RPI 0. The make file build a .bin file that can be uploaded to raspberry pi using the bootloader and python application on host.
+### app: 
+This directory contain a minimal file strucutre of a C application that can be cross compiled for RPI 0. The make file build a .bin file that can be uploaded to raspberry pi using the bootloader and python application on host.
 
 
-pytho_app_host: Host application to upload bin file on RPI 0. This is a modified version of Stanford CS107E course application.
+### pytho_app_host: 
+Host application to upload bin file on RPI 0. This is a modified version of Stanford CS107E course application.
 
 
-toolchain: This contain a deb package that can be installed to compiled C application for RPI 0.
+### toolchain: 
+This contain a deb package that can be installed to compiled C application for RPI 0.
 
-Note: The default USB port is /dev/ttyUSB0 in rpi-run.py change it according to your setup in rpi-run.py file.
+## Note: 
+The default USB port is /dev/ttyUSB0 in rpi-run.py change it according to your setup in rpi-run.py file.
 In order to make rpi-run.py to terminal executable follow:
 1. At the unix command prompt, type the following to make myscript.py executable: $ chmod +x myscript.py.
 2. Move rpi-run.py into your bin directory, and it will be runnable from anywhere.
